@@ -1,0 +1,26 @@
+/*
+* @Author: Administrator
+* @Date:   2016-12-11 18:56:47
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-12-11 19:44:09
+*/
+/*
+1、支持多色图标
+2、支持动态调整图标大小与颜色(按字体的方式)
+3、兼容性较差，支持ie9+及现代浏览器
+4、浏览器渲染svg性能一般，还不如png
+ */
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   font-size: 26px;
+   transition: font-size 0.4s ease-in-out,color 0.4s ease-in-out;
+   -moz-transition: color 0.5s ease-in-out,font-size 0.5s ease-in-out;
+   -webkit-transition: color 0.5s ease-in-out,font-size 0.5s ease-in-out;
+}
+.icon:hover{
+	font-size: 56px;
+	color: #F01400;
+}
